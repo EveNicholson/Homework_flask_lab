@@ -1,3 +1,4 @@
+from dbm.ndbm import library
 from flask import render_template, request, redirect, Blueprint
 from models.library import *
 from models.book import *
@@ -7,7 +8,7 @@ library_blueprint = Blueprint('library', __name__)
 
 @library_blueprint.route('/library')
 def index():
-    return render_template('index.html', title='Home', library=library)
+    return render_template('index.html', title='Home' library=library)
 
 @library_blueprint.route('/library', methods=['POST'])
 def add_new_book():
