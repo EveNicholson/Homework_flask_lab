@@ -1,0 +1,19 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+      <title class="asd">{{ title }} - All books in our library!</title>
+    </head>
+    <body>
+        <ul>
+          <li class="navLink"><a href="/library">Home</a></li>
+        </ul>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
+
+
+
+
+
+

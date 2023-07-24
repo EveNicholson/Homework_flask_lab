@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <img class="library_image" src="static/library.jpg">
+    <h1 class="asd"> All books in our library!</h1>
+   
+    <form  class="form-inline" action="/library" method="post">
+      <label for="title">Title</label>
+      <input type="text" name="title" id="title">
+      <label for="author">Author</label>
+      <input type="text" name="Author" id="author">
+      <label for="genre">Genre</label>
+      <input type="text" name="genre" id="genre">
+      <br>
+      <button class =button_add type="text">Add book!</button>
+      <br>
+      <button class= button_remove type="text">Remove book!</button>
+    </form>  
+   
+    
+    <div class="book-container">
+    {% for book in library %}
+    <div class="book">
+       <ul>
+        <li>
+         <h3>{{ book.title }}, {{ book.author }}, {{ book.genre }}</h3>
+        </li>
+       </ul> 
+    </div>
+    <form>
+     
+    </form>
+
+     
+
+      {% endfor %} 
+
+    </div>
+    
+{% endblock %}  
+
+        
+    
+   

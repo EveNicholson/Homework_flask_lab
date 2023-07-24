@@ -1,0 +1,56 @@
+body {
+    background-color: rgb(238, 222, 196);
+  }
+  
+  
+   a {
+    color: black;
+    
+  }
+  
+  .navLink {
+      display: contents;
+  }
+  
+  .form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 5px;
+    
+  }
+  
+  
+  .form-inline label {
+    margin: 15px 20px 15px 20px;
+    
+  }
+
+  h3 {
+    color: black;
+  }
+
+.button_add {
+    color: black;
+    background-color:white;
+    border-radius: 8px;
+}
+.button_remove{
+    color: black;
+    background-color:white;
+    border-radius: 8px;
+}    
+
+.label {
+    border-radius: 10px;
+}
+
+.library_image {
+    height: 25%;
+    width: 100%;
+    justify-content: center;
+
+}
+.asd{
+    text-align: center;
+}
